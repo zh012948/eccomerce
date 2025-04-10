@@ -3,27 +3,22 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Assistant", sans-serif;
-
-}
-
-/* ====================== Header ================================ */
-.header {
-    text-align: center;
-    align-items: center;
-    background-color: #242833;
-    color: white;
-    height: 36px;
-    line-height: 31.9px;
+    padding-top: 70px;
 }
 
 /* ============================  Navigation  =========================*/
 
 .navigation {
-
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     height: 70px;
+    background-color: white;
     box-shadow: 1px 0.2px 1px #242833;
+    z-index: 999;
 }
 
 .logo img {
@@ -53,7 +48,7 @@ body {
     color: black;
     font-size: 16px;
     text-decoration: none;
-    margin-top: 12px;
+    margin-top: 20px;
     transition: 0.2s ease-in-out;
 }
 
@@ -97,4 +92,48 @@ body {
 
     height: 100vh;
     object-fit: cover;
+}
+
+
+/*  ================ Announcement Scroll Animation */
+.announcement {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #90EE90;
+    font-size: 24px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+/* Collections */
+#collections {
+    padding-left: 130px;
+    padding-top: 70px;
+}
+
+#collection-heading {
+    font-size: 40px;
+}
+
+.arrow {
+    font-size: 15px;
+}
+
+.collection-card {
+    cursor: pointer;
+}
+
+.collection-container {
+    display: flex;
+    gap: 8px;
+}
+
+.collection-card img {
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.collection-card img:hover {
+    scale: 1.01;
 }

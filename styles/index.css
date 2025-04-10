@@ -6,6 +6,7 @@ body {
 
 }
 
+/* ====================== Header ================================ */
 .header {
     text-align: center;
     align-items: center;
@@ -15,11 +16,11 @@ body {
     line-height: 31.9px;
 }
 
-/* Navigation */
+/* ============================  Navigation  =========================*/
 
 .navigation {
+
     display: flex;
-    align-items: center;
     justify-content: space-around;
     height: 70px;
     box-shadow: 1px 0.2px 1px #242833;
@@ -40,8 +41,6 @@ body {
 
 .navigation .navbar ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
 }
 
@@ -54,6 +53,7 @@ body {
     color: black;
     font-size: 16px;
     text-decoration: none;
+    margin-top: 12px;
     transition: 0.2s ease-in-out;
 }
 
@@ -65,6 +65,7 @@ body {
 
 .nav-icons {
     display: flex;
+    align-items: center;
     gap: 22px;
 }
 
@@ -87,4 +88,13 @@ body {
 #log-icon:active,
 #cart-icon:active {
     transform: scale(0.88);
+}
+
+
+
+/* ================= Courosel Styling here */
+.carousel-item img {
+
+    height: 100vh;
+    object-fit: cover;
 }

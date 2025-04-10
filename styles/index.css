@@ -67,7 +67,8 @@ body {
 
 #search-icon,
 #log-icon,
-#cart-icon {
+#cart-icon,
+#moon-icon {
     width: 25px;
     cursor: pointer;
     transition: 0.1s ease-in;
@@ -75,7 +76,8 @@ body {
 
 #search-icon:hover,
 #log-icon:hover,
-#cart-icon:hover {
+#cart-icon:hover,
+#moon-icon:hover {
     scale: 1.2;
 }
 
@@ -136,4 +138,117 @@ body {
 
 .collection-card img:hover {
     scale: 1.01;
+}
+
+
+/* Feedback  */
+
+
+#feedback {
+    margin-top: 20px;
+
+}
+
+.feedback-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.stars {
+    color: goldenrod;
+    font-size: 24px;
+}
+
+.feedback-text {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    padding: 15px 20px;
+    max-width: 500px;
+}
+
+.customer-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #007bff;
+}
+
+
+/* ============ Services ================ */
+#services {
+    margin-top: 70px;
+    background: #F9F9F9;
+}
+
+
+#services .card-container {
+    margin: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+#services .card1 {
+    width: 423.672px;
+    height: 150.375px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 36px;
+    background-color: #e8f5e9;
+    border: 2px solid rgb(76, 175, 80);
+    transition: 0.2s ease-out;
+}
+
+#services .card2 {
+    width: 423.672px;
+    height: 150.375px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 36px;
+    background-color: #FFF3E0;
+    border: 2px solid #FF9800;
+    transition: 0.2s ease-out;
+}
+
+#services .card3 {
+    width: 423.672px;
+    height: 150.375px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 36px;
+    background-color: #ffe0b2;
+    border: 2px solid #FF5722;
+    transition: 0.2s ease-out;
+}
+
+#services .card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-25px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+.social-links img {
+    width: 30px;
+    margin: 8px;
+    transition: 0.3s ease;
+}
+
+.social-links img:hover {
+    scale: 1.2;
+
 }

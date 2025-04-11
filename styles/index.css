@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     font-family: "Assistant", sans-serif;
     padding-top: 70px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* ============================  Navigation  =========================*/
@@ -56,7 +57,9 @@ body {
     font-weight: bold;
 }
 
-
+#mob-login {
+    display: none;
+}
 
 .nav-icons {
     display: flex;
@@ -145,7 +148,9 @@ body {
 
 
 #feedback {
-    margin-top: 20px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
 
 }
 
@@ -250,5 +255,64 @@ body {
 
 .social-links img:hover {
     scale: 1.2;
+
+}
+
+
+
+/* Collection section  responsive code  */
+
+@media screen and (max-width:768px) {
+
+
+    #collections {
+        padding-left: 30px;
+    }
+
+    #collection-heading {
+        padding-left: 80px;
+    }
+
+    .collection-card img {
+        width: 310px;
+    }
+
+    .collection-card {
+        font-size: 20px;
+    }
+
+    .collection-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    #services .card-container {
+        flex-direction: column;
+
+    }
+
+
+    #services .card-container .card1,
+    #services .card-container .card2,
+    #services .card-container .card3 {
+        width: 330px;
+    }
+
+
+    #services .card1:hover,
+    .card2:hover,
+    .card3:hover {
+        transform: translateY(-10px);
+
+    }
+
+
+    #services .card-container {
+        gap: 20px;
+    }
 
 }

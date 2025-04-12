@@ -1,0 +1,29 @@
+.shipping-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.shipping-container p {
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+
+.shipping-container .content {
+    width: 471.672px;
+    height: 201.562px;
+    text-wrap: wrap;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 28.8px;
+}
+
+
+.footer {
+    margin-top: 92px;
+}

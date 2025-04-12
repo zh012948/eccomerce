@@ -317,3 +317,19 @@ body {
 
 }
 
+
+/* Floating Whatsapp Icon */
+.whatsapp-logo img {
+    position: fixed;
+    width: 45px;
+    top: 530px;
+    left: 1280px;
+    z-index: 1002;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.whatsapp-logo img:hover {
+
+    transform: translateY(-5px);
+}

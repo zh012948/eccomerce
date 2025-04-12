@@ -333,3 +333,8 @@ body {
 
     transform: translateY(-5px);
 }
+
+
+.whatsapp-logo img:active {
+    transform: scale(0.88);
+}

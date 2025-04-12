@@ -5,6 +5,7 @@ body {
     font-family: "Assistant", sans-serif;
     padding-top: 70px;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
 /* ============================  Navigation  =========================*/
@@ -20,6 +21,8 @@ body {
     background-color: white;
     box-shadow: 1px 0.2px 1px #242833;
     z-index: 999;
+    transition: transform 0.2s ease;
+
 }
 
 .logo img {
@@ -337,4 +340,11 @@ body {
 
 .whatsapp-logo img:active {
     transform: scale(0.88);
+}
+
+
+/* Hide navbar when scrolling down */
+.navbar-hidden {
+    transform: translateY(-100%);
+
 }

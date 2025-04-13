@@ -75,7 +75,7 @@
                     <div class="carousel-caption d-block text-center text-light">
                         <h2 class="fw-bold">Men Watches</h2>
                         <p>Affordable & Quality Watches Under Rs.2000</p>
-                        <a href="#shop" class="btn btn-dark">Shop Now</a>
+                        <a href="#shop" class="btn btn-dark shop-now">Shop Now</a>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
                     <div class="carousel-caption d-block text-center text-light">
                         <h2 class="fw-bold">Women Watches</h2>
                         <p>Affordable & Quality Watches Under Rs.2000</p>
-                        <a href="#shop" class="btn btn-dark">Shop Now</a>
+                        <a href="#shop" class="btn btn-dark shop-now">Shop Now</a>
                     </div>
                 </div>
 
@@ -97,7 +97,7 @@
                     <div class="carousel-caption d-block text-center text-light">
                         <h2 class="fw-bold">Couple Watches</h2>
                         <p>Affordable & Quality Watches Under Rs.2000</p>
-                        <a href="#shop" class="btn btn-dark">Shop Now</a>
+                        <a href="#shop" class="btn btn-dark shop-now">Shop Now</a>
                     </div>
                 </div>
 
@@ -158,6 +158,10 @@
         </div>
 
     </section>
+
+    <button id="btnViewAll">
+        View all
+    </button>
 
 
     <!-- Customer Feecback -->
@@ -334,6 +338,29 @@
         const btnMenCollection = document.getElementById('btnMenCollection');
         const btnWomenCollection = document.getElementById('btnWomenCollection');
         const btnCoupleCollection = document.getElementById('btnCoupleCollection');
+        const btnViewAll = document.getElementById('btnViewAll');
+        const shopNow = document.querySelectorAll('.shop-now');
+
+        shopNow.forEach((shop, index) => {
+            shop.addEventListener('click', () => {
+                if (index === 0) {
+                    window.location.href = "men.html";
+                }
+
+                if (index === 1) {
+                    window.location.href = "women.html";
+                }
+
+                if (index === 2) {
+                    window.location.href = "couple.html";
+                }
+
+            })
+        })
+
+        btnViewAll.addEventListener('click', () => {
+            location.href = "shop.html";
+        })
 
 
         btnMenCollection.addEventListener('click', () => {

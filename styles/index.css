@@ -348,3 +348,22 @@ body {
     transform: translateY(-100%);
 
 }
+
+
+#btnViewAll {
+    display: block;
+    background: #121212;
+    font-size: 15px;
+    color: white;
+    width: 122px;
+    height: 47px;
+    border-radius: 7px;
+    margin: auto;
+    transition: 0.2s ease;
+}
+
+
+#btnViewAll:active {
+    transform: scale(0.98);
+
+}

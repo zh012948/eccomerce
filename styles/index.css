@@ -367,3 +367,8 @@ body {
     transform: scale(0.98);
 
 }
+
+
+#btnViewAll:hover {
+    background: rgb(57, 57, 57);
+}

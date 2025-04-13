@@ -1,0 +1,482 @@
+[
+    {
+        "title": "Casio Sports black",
+        "category": "casio",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": "5",
+        "collection": "men",
+        "availability": "sale",
+        "image": "images/casio3.jpg"
+    },
+    {
+        "title": "Casio Sports blue",
+        "category": "casio",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": "5",
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/casio1.jpg"
+    },
+    {
+        "title": "Casio Sports skin",
+        "category": "casio",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": "5",
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/casio2.jpg"
+    },
+    {
+        "title": "Casio Sports green",
+        "category": "casio",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": "5",
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/casio4.jpg"
+    },
+    {
+        "title": "Bestwin Square Golden",
+        "category": "bestwin",
+        "price": 3300,
+        "originalPrice": 3500,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/𝐁𝐞𝐬𝐭𝐰𝐢𝐧-𝐒𝐪𝐮𝐚𝐫𝐞1.jpg"
+    },
+    {
+        "title": "Bestwin Square Silver",
+        "category": "bestwin",
+        "price": 3300,
+        "originalPrice": 3500,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/𝐁𝐞𝐬𝐭𝐰𝐢𝐧-𝐒𝐪𝐮𝐚𝐫𝐞2.jpg"
+    },
+    {
+        "title": "Bestwin Square Golden",
+        "category": "bestwin",
+        "price": 3300,
+        "originalPrice": 3500,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/𝐁𝐞𝐬𝐭𝐰𝐢𝐧-𝐒𝐪𝐮𝐚𝐫𝐞3.jpg"
+    },
+    {
+        "title": "𝐁𝐞𝐬𝐭𝐰𝐢𝐧 𝐒𝐪𝐮𝐚𝐫𝐞",
+        "category": "bestwin",
+        "price": 3300,
+        "originalPrice": 3500,
+        "rating": 4,
+        "collection": "men",
+        "availability": "sale",
+        "image": "images/𝐁𝐞𝐬𝐭𝐰𝐢𝐧-𝐒𝐪𝐮𝐚𝐫𝐞4.jpg"
+    },
+    {
+        "title": "Bestwin Square Black",
+        "category": "bestwin",
+        "price": 3300,
+        "originalPrice": 3500,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/𝐁𝐞𝐬𝐭𝐰𝐢𝐧-𝐒𝐪𝐮𝐚𝐫𝐞5.jpg"
+    },
+    {
+        "title": "Citizen Curtaz black",
+        "category": "citizen curtaz",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/citizen1.jpg"
+    },
+    {
+        "title": "Citizen Curtaz black",
+        "category": "citizen curtaz",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/citizen2.jpg"
+    },
+    {
+        "title": "Citizen Curtaz black",
+        "category": "citizen Curtaz",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/citizen3.jpg"
+    },
+    {
+        "title": "Citizen Curtaz golden",
+        "category": "citizen Curtaz",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/citizen4.jpg"
+    },
+    {
+        "title": "G Shock Green",
+        "category": "g-shock",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/gshock1.jpg"
+    },
+    {
+        "title": "G Shock Blue",
+        "category": "g-shock",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/gshock2.jpg"
+    },
+    {
+        "title": "G Shock golden",
+        "category": "g-shock",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/gshock3.jpg"
+    },
+    {
+        "title": "G Shock black",
+        "category": "g-shock",
+        "price": 2800,
+        "originalPrice": 3300,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/gshock4.jpg"
+    },
+    {
+        "title": "Rado DiaStar-C799 Golden",
+        "category": "rado",
+        "price": 3500,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rado1.jpg"
+    },
+    {
+        "title": "Rado DiaStar-C799 Golden",
+        "category": "rado",
+        "price": 3500,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rado2.jpg"
+    },
+    {
+        "title": "Rado DiaStar-C799 Golden",
+        "category": "rado",
+        "price": 3500,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rado3.jpg"
+    },
+    {
+        "title": "Rado DiaStar-C799 Golden",
+        "category": "rado",
+        "price": 3500,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rado4.jpg"
+    },
+    {
+        "title": "Rado DiaStar-C799 Silver",
+        "category": "rado",
+        "price": 3500,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rado5.jpg"
+    },
+    {
+        "title": "RLX Submariner black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex1.jpg"
+    },
+    {
+        "title": "RLX Submariner black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex2.jpg"
+    },
+    {
+        "title": "RLX Submariner blue Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex3.jpg"
+    },
+    {
+        "title": "RLX Submariner blue Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex4.jpg"
+    },
+    {
+        "title": "RLX Submariner black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex5.jpg"
+    },
+    {
+        "title": "RLX Submariner green Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex6.jpg"
+    },
+    {
+        "title": "RLX Submariner green Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex7.jpg"
+    },
+    {
+        "title": "RLX Submariner black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex8.jpg"
+    },
+    {
+        "title": "RLX Submariner red & Black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex9.jpg"
+    },
+    {
+        "title": "RLX Submariner Red & Black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex10.jpg"
+    },
+    {
+        "title": "RLX Submariner Red & Black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex11.jpg"
+    },
+    {
+        "title": "RLX Submariner black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex12.jpg"
+    },
+    {
+        "title": "RLX Submariner black Dial",
+        "category": "rolex",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/rolex1.jpg"
+    },
+    {
+        "title": "Tissot black",
+        "category": "tissot",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/tissot1.jpg"
+    },
+    {
+        "title": "Tissot black",
+        "category": "tissot",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/tissot2.jpg"
+    },
+    {
+        "title": "Tissot brown",
+        "category": "tissot",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/tissot3.jpg"
+    },
+    {
+        "title": "Tissot light blue",
+        "category": "tissot",
+        "price": 3400,
+        "originalPrice": 3800,
+        "rating": 4,
+        "availability": "sale",
+        "collection": "men",
+        "image": "images/tissot4.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "collection": "couple",
+        "availability": "not available",
+        "image": "images/dunlex1.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "collection": "couple",
+        "availability": "not available",
+        "image": "images/dunlex2.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "availability": "not available",
+        "collection": "couple",
+        "image": "images/dunlex3.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "availability": "not available",
+        "collection": "couple",
+        "image": "images/dunlex4.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "availability": "not available",
+        "collection": "couple",
+        "image": "images/dunlex5.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "availability": "not available",
+        "collection": "couple",
+        "image": "images/dunlex6.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "availability": "not available",
+        "collection": "couple",
+        "image": "images/dunlex7.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "availability": "not available",
+        "collection": "couple",
+        "image": "images/dunlex8.jpg"
+    },
+    {
+        "title": "DUNLEX Couple Watches",
+        "category": "DUNLEX",
+        "price": 2200,
+        "originalPrice": 2800,
+        "rating": "5",
+        "availability": "not available",
+        "collection": "couple",
+        "image": "images/dunlex9.jpg"
+    }
+]

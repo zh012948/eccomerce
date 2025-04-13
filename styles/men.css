@@ -1,0 +1,137 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input,
+select {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 60px;
+}
+
+
+/* Custom Product Card Styling */
+.product-card {
+    border: 3px solid lightgrey;
+    width: 270px;
+    padding: 5px;
+    background-color: #f3f9f6;
+    height: 470px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 270px;
+    height: 300px;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.availability {
+    border: 1px solid black;
+    width: 56px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px;
+    background: black;
+    color: white;
+    transform: translateY(-55px);
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.product-name,
+.cross-price,
+.original-price {
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.79);
+    transform: translateY(-40px);
+}
+
+.original-price {
+    font-size: 21px;
+    transform: translateY(-50px);
+}
+
+.cross-price {
+    text-decoration: line-through;
+}
+
+.order-now {
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+    transform: translateY(-55px);
+    margin-left: 10px;
+    outline: none;
+    transition: 0.19s ease-in-out;
+}
+
+.order-now:hover {
+    background: white;
+    color: black;
+}
+
+.order-now:active {
+    scale: 0.98;
+}
+
+.pagination {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.pagination button:hover {
+    background-color: black;
+    color: white;
+}
+
+.pagination .active {
+    background-color: black;
+    color: white;
+}

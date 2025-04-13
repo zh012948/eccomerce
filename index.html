@@ -137,20 +137,20 @@
 
         <div class="collection-container">
             <!-- Card 1 -->
-            <div class="collection-card">
+            <div class="collection-card" id="btnMenCollection">
                 <img src="./assets/men_collection.PNG" alt="men Collection">
                 <p>Men's Watches <span class="arrow">&#8594;</span> </p>
             </div>
 
             <!-- Card 2 -->
 
-            <div class="collection-card">
+            <div class="collection-card" id="btnWomenCollection">
                 <img src="./assets/women_collection.PNG" alt="Women Collection">
                 <p>Women's Watches <span class="arrow">&#8594;</span> </p>
             </div>
 
             <!-- Card 3 -->
-            <div class="collection-card">
+            <div class="collection-card" id="btnCoupleCollection">
                 <img src="./assets/couple_collection.PNG" alt="Couple Collection">
                 <p>Couple Watches <span class="arrow">&#8594;</span> </p>
             </div>
@@ -331,6 +331,22 @@
 
         let lastScrollTop = 0;
         const navbar = document.querySelector(".navigation");
+        const btnMenCollection = document.getElementById('btnMenCollection');
+        const btnWomenCollection = document.getElementById('btnWomenCollection');
+        const btnCoupleCollection = document.getElementById('btnCoupleCollection');
+
+
+        btnMenCollection.addEventListener('click', () => {
+            location.href = "men.html";
+        });
+
+        btnWomenCollection.addEventListener('click', () => {
+            location.href = "women.html";
+        });
+
+        btnCoupleCollection.addEventListener('click', () => {
+            location.href = "couple.html";
+        });
 
         window.addEventListener("scroll", () => {
             let currentScroll = window.scrollY;

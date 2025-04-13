@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women Watches</title>
+    <link rel="stylesheet" href="styles/Women.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <section id="hero-sec">
+        <div class="navigation">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+
+            <!-- Navbar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="shipping_policy.html">Shipping Policy</a></li>
+                    <li><a href="refund_policy.html">Refund Policy</a></li>
+                    <li><a href="#" id="mob-login">Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <img id="search-icon" src="./assets/search.png" alt="Search" title="Search">
+                <img id="log-icon" src="./assets/login.png" alt="login" title="Login">
+                <img id="cart-icon" src="./assets/cart.png" alt="cart" title="Cart">
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Whatsapp icon -->
+    <div class="whatsapp-logo">
+        <img src="./assets/whatsapp.png" id="whatsapp" alt="Floating Whatsapp Icon" title="Contact on Whatsapp">
+    </div>
+
+    <!-- Page Heading -->
+    <h1>Women Watches</h1>
+
+    <!-- Filters Section -->
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search product..." />
+        <select id="categoryFilter">
+            <option value="">Filter by category</option>
+        </select>
+        <select id="priceFilter">
+            <option value="">Sort by price</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+    </div>
+
+    <!-- Products Grid -->
+    <div id="productContainer" class="product-grid"></div>
+    <div id="paginationControls" class="pagination"></div>
+
+    <!-- Coming Soon Section with Countdown -->
+    <div class="coming-soon">
+        <h2>Something exciting is coming soon!</h2>
+        <p>Stay tuned for our exclusive women's collection launch in:</p>
+        <div id="countdown">
+            <span id="days">7</span>d
+            <span id="hours">00</span>h
+            <span id="minutes">00</span>m
+            <span id="seconds">00</span>s
+        </div>
+    </div>
+
+    <!-- Scroll Navbar Hide Script -->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navigation");
+
+        window.addEventListener("scroll", () => {
+            let currentScroll = window.scrollY;
+            if (currentScroll > lastScrollTop) {
+                navbar.classList.add("navbar-hidden");
+            } else {
+                navbar.classList.remove("navbar-hidden");
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+
+    <!-- Women Page Script -->
+    <script src="women.js"></script>
+
+    <!-- Countdown Script -->
+    <script>
+        const countdown = () => {
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 7);
+
+            const updateCountdown = () => {
+                const now = new Date().getTime();
+                const distance = endDate - now;
+
+                if (distance < 0) {
+                    document.getElementById("countdown").innerHTML = "We're live!";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").textContent = days;
+                document.getElementById("hours").textContent = hours;
+                document.getElementById("minutes").textContent = minutes;
+                document.getElementById("seconds").textContent = seconds;
+            };
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        };
+
+        countdown();
+    </script>
+</body>
+
+</html>

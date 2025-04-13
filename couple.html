@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Couple Watches</title>
+    <link rel="stylesheet" href="styles/couple.css" />
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+
+    <section id="hero-sec">
+
+        <div class="navigation">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+
+
+            <!-- Navbar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="shipping_policy.html">Shipping Policy</a></li>
+                    <li><a href="refund_policy.html">Refund Policy</a></li>
+                    <li><a href="#" id="mob-login">Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Nav Icons  -->
+            <div class="nav-icons">
+                <img id="search-icon" src="./assets/search.png" alt="Search" title="Search">
+                <img id="log-icon" src="./assets/login.png" alt="login" title="Login">
+                <img id="cart-icon" src="./assets/cart.png" alt="cart" title="Cart">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating Whatsapp icon -->
+    <div class="whatsapp-logo">
+        <img src="./assets/whatsapp.png" id="whatsapp" alt="Floating Whatsapp Icon" title="Contact on Whatsapp">
+    </div>
+
+
+
+    <h1>Couple Watches</h1>
+
+    <!-- Filters -->
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search product..." />
+
+        <select id="categoryFilter">
+            <option value="">Filter by category</option>
+            <option value="DUNLEX">DUNLEX </option>
+
+        </select>
+
+        <select id="priceFilter">
+            <option value="">Sort by price</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+    </div>
+
+    <div id="productContainer" class="product-grid"></div>
+    <div id="paginationControls" class="pagination"></div>
+
+
+
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".navigation");
+
+        window.addEventListener("scroll", () => {
+            let currentScroll = window.scrollY;
+
+            if (currentScroll > lastScrollTop) {
+                // Scroll Down
+                navbar.classList.add("navbar-hidden");
+            } else {
+                // Scroll Up
+                navbar.classList.remove("navbar-hidden");
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+
+
+    <script src="couple.js"></script>
+</body>
+
+</html>

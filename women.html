@@ -14,12 +14,10 @@
     <!-- Navigation Section -->
     <section id="hero-sec">
         <div class="navigation">
-            <!-- Logo -->
             <div class="logo">
                 <img src="./assets/logo.png" alt="logo">
             </div>
 
-            <!-- Navbar -->
             <div class="navbar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -31,7 +29,6 @@
                 </ul>
             </div>
 
-            <!-- Nav Icons -->
             <div class="nav-icons">
                 <img id="search-icon" src="./assets/search.png" alt="Search" title="Search">
                 <img id="log-icon" src="./assets/login.png" alt="login" title="Login">
@@ -40,15 +37,15 @@
         </div>
     </section>
 
-    <!-- Floating Whatsapp icon -->
+    <!-- WhatsApp Icon -->
     <div class="whatsapp-logo">
         <img src="./assets/whatsapp.png" id="whatsapp" alt="Floating Whatsapp Icon" title="Contact on Whatsapp">
     </div>
 
-    <!-- Page Heading -->
+    <!-- Heading -->
     <h1>Women Watches</h1>
 
-    <!-- Filters Section -->
+    <!-- Filters -->
     <div class="filters">
         <input type="text" id="searchInput" placeholder="Search product..." />
         <select id="categoryFilter">
@@ -61,19 +58,19 @@
         </select>
     </div>
 
-    <!-- Products Grid -->
+    <!-- Product Grid & Pagination -->
     <div id="productContainer" class="product-grid"></div>
     <div id="paginationControls" class="pagination"></div>
 
-    <!-- Coming Soon Section with Countdown -->
+    <!-- Coming Soon Section -->
     <div class="coming-soon">
         <h2>Something exciting is coming soon!</h2>
         <p>Stay tuned for our exclusive women's collection launch in:</p>
         <div id="countdown">
-            <span id="days">7</span>d
-            <span id="hours">00</span>h
-            <span id="minutes">00</span>m
-            <span id="seconds">00</span>s
+            <span id="days">0</span>d
+            <span id="hours">0</span>h
+            <span id="minutes">0</span>m
+            <span id="seconds">0</span>s
         </div>
     </div>
 
@@ -96,11 +93,10 @@
     <!-- Women Page Script -->
     <script src="women.js"></script>
 
-    <!-- Countdown Script -->
+    <!-- Countdown Timer Script -->
     <script>
         const countdown = () => {
-            const endDate = new Date();
-            endDate.setDate(endDate.getDate() + 7);
+            const endDate = new Date("2025-04-20T00:00:00"); // Sunday, April 20, 2025 at 12:00 AM
 
             const updateCountdown = () => {
                 const now = new Date().getTime();
@@ -128,6 +124,7 @@
 
         countdown();
     </script>
+
 </body>
 
 </html>

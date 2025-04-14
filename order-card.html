@@ -49,6 +49,7 @@
 <body>
     <section id="hero-sec">
 
+
         <div class="navigation">
             <!-- Logo -->
             <div class="logo">
@@ -70,11 +71,6 @@
         </div>
     </section>
 
-    <!-- Floating Whatsapp icon -->
-    <div class="whatsapp-logo">
-        <img src="./assets/whatsapp.png" onclick="openWhatsApp()" id="whatsapp" alt="Floating Whatsapp Icon"
-            title="Contact on Whatsapp">
-    </div>
 
     <!-- Order Now Card -->
     <div class="product-card">
@@ -182,12 +178,6 @@
             lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
         });
 
-        function openWhatsApp() {
-            const phoneNumber = "923461621052";
-            const message = "Hey there! I want to get information about your products.";
-            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappLink, "_blank");
-        }
 
         // 🔧 Fix: Load product data from localStorage correctly
         const product = JSON.parse(localStorage.getItem("selectedProduct"));

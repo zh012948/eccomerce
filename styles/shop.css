@@ -35,6 +35,7 @@ select {
 }
 
 
+
 /* Custom Product Card Styling */
 .product-card {
     border: 3px solid lightgrey;
@@ -177,4 +178,62 @@ select {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input,
+    select {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px auto;
+    }
+
+    .product-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .order-now {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .whatsapp-logo {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .timer-container {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
 }

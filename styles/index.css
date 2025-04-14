@@ -97,10 +97,13 @@ body {
     .navigation .navbar ul {
         flex-direction: column;
         margin-top: 9px;
+        align-items: center;
         display: none;
         font-size: 30px;
         text-align: center;
     }
+
+
 
     .navigation .navbar {
 

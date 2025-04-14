@@ -160,10 +160,91 @@ select {
     /* Apply the fade-in animation */
 }
 
+
 #countdown {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 10px;
     animation: fadeIn 0.3s ease-in-out;
     /* Apply the fade-in animation */
+}
+
+
+
+/* Existing styles... (keep your base styles) */
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    input,
+    select {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    select {
+        width: 90%;
+    }
+
+    .product-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .order-now {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        transform: none;
+    }
+
+    .availability,
+    .product-name,
+    .cross-price,
+    .original-price {
+        transform: none;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .coming-soon {
+        padding: 20px;
+    }
+
+    #countdown {
+        font-size: 1.2rem;
+    }
 }

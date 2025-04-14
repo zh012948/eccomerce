@@ -15,6 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
             const newPrice = document.querySelector(".new-price");
             const productRating = document.querySelector(".rating");
             const productAvailability = document.querySelector(".badge");
+            const orderButton = document.querySelector(".order-btn");  // The Order Now button
 
             // Set the values for the product card
             document.title = product.title;
@@ -28,6 +29,13 @@ window.addEventListener("DOMContentLoaded", () => {
             // Optional: Add conditional classes or styling for availability, like "Sale" badge
             if (product.availability === "sale") {
                 productAvailability.classList.add("sale");
+            }
+
+            // Disable the "Order Now" button if availability is not "sale"
+            if (product.availability !== "sale") {
+                orderButton.disabled = true;
+                orderButton.style.backgroundColor = "#ccc";  // Optional: change button color to indicate it's disabled
+                orderButton.style.cursor = "not-allowed";  // Change cursor to indicate the button is disabled
             }
         }
     } else {

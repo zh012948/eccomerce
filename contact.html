@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Products</title>
-    <link rel="stylesheet" href="styles/shop.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="icon" href="assets/logo.png">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="icon" href="assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet" />
@@ -23,7 +22,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li><a href="shipping_policy.html">Shipping Policy</a></li>
                     <li><a href="refund_policy.html">Refund Policy</a></li>
                     <li><a href="#" id="mob-login">Login</a></li>
@@ -43,51 +42,39 @@
             title="Contact on Whatsapp" />
     </div>
 
-    <h1>All Products</h1>
+    <div class="contact-form">
+        <p>Contact Us</p>
+        <form class="form-grid" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Required access key -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 
-    <!-- Filters -->
-    <div class="filters">
-        <input type="text" id="searchInput" placeholder="Search product..." />
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email *" required />
+            <input type="tel" name="phone" placeholder="Phone number" />
+            <textarea name="message" placeholder="Comment"></textarea>
 
-        <select id="collectionFilter">
-            <option value="">All Collections</option>
-            <option value="men">Men</option>
-            <option value="women">Women</option>
-            <option value="couple">Couple</option>
-        </select>
+            <div class="form-button">
+                <button type="submit">Send</button>
+            </div>
 
-        <select id="categoryFilter">
-            <option value="">All categories</option>
-            <option value="bestwin">Bestwin</option>
-            <option value="casio">Casio</option>
-            <option value="citizen curtaz">Citizen Curtaz</option>
-            <option value="g-shock">G-Shock</option>
-            <option value="rado">Rado</option>
-            <option value="rolex">Rolex</option>
-            <option value="tissot">Tissot</option>
-            <option value="dunlex">DUNLEX</option>
-        </select>
-
-        <select id="priceFilter">
-            <option value="">Sort by price</option>
-            <option value="low-to-high">Low to High</option>
-            <option value="high-to-low">High to Low</option>
-        </select>
+            <!-- Optional: success/error message placeholders -->
+            <div id="form-status"></div>
+        </form>
     </div>
 
-    <div id="productContainer" class="product-grid"></div>
-    <div id="paginationControls" class="pagination"></div>
-
-    <!-- Timer Container -->
-    <div id="countdownContainer" class="timer-container" style="display: none;">
-        <h2>Women Collection Launching In:</h2>
-        <div id="countdown" class="countdown"></div>
-    </div>
-
+    <!-- Footer -->
+    <section class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/instagram.png"
+                    alt="instagram" /></a>
+            <a href="https://www.facebook.com/share/161xooD1eg/" target="_blank"><img src="./assets/facebook.png"
+                    alt="facebook" /></a>
+        </div>
+    </section>
 
     <script>
-        const navbar = document.querySelector(".navigation");
         let lastScrollTop = 0;
+        const navbar = document.querySelector(".navigation");
 
         window.addEventListener("scroll", () => {
             let currentScroll = window.scrollY;
@@ -106,14 +93,10 @@
         function openWhatsApp() {
             const phoneNumber = "923435022406";
             const message = "Hey there! I want to get information about your products.";
-
             const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, "_blank");
         }
     </script>
-
-
-    <script src="shop.js"></script>
 </body>
 
 </html>

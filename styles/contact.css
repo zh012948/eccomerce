@@ -225,3 +225,17 @@ body {
     transform: translateY(-100%);
 
 }
+
+/* Whatsapp Responsive */
+
+@media screen and (max-width:768px) {
+
+    .whatsapp-logo img {
+        bottom: 0px;
+        transform: translateY(10px);
+        left: 290px;
+
+    }
+
+
+}

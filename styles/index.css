@@ -372,6 +372,20 @@ body {
 }
 
 
+/* Whatsapp Responsive */
+
+@media screen and (max-width:768px) {
+
+    .whatsapp-logo img {
+        bottom: 0px;
+        transform: translateY(50px);
+        left: 290px;
+
+    }
+
+
+}
+
 /* Hide navbar when scrolling down */
 .navbar-hidden {
     transform: translateY(-100%);

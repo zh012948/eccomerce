@@ -42,3 +42,4 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log("No product data found in localStorage.");
     }
 });
+

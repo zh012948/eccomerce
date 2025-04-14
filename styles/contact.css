@@ -90,14 +90,16 @@ body {
     left: 0;
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     height: 70px;
     background-color: white;
     box-shadow: 1px 0.2px 1px #242833;
     z-index: 999;
-    transition: transform 0.2s ease;
+    transition: top 0.3s ease-in-out;
+
 
 }
+
+
 
 .logo img {
     width: 150px;
@@ -144,35 +146,14 @@ body {
     font-weight: bold;
 }
 
-
-/* Floating Whatsapp Icon */
-.whatsapp-logo img {
+#menu {
     position: fixed;
-    width: 45px;
-    top: 530px;
-    left: 1280px;
-    z-index: 1002;
+    top: 20px;
+    right: 25px;
+    display: none;
+    margin-right: 12px;
     cursor: pointer;
-    transition: 0.1s ease-in;
 }
-
-.whatsapp-logo img:hover {
-
-    transform: translateY(-5px);
-}
-
-
-.whatsapp-logo img:active {
-    transform: scale(0.88);
-}
-
-
-/* Hide navbar when scrolling down */
-.navbar-hidden {
-    transform: translateY(-100%);
-
-}
-
 
 /* navbar Responsive Code */
 
@@ -213,5 +194,34 @@ body {
     .navigation .navbar ul li a {
         margin-top: 4px;
     }
+
+}
+
+
+/* Floating Whatsapp Icon */
+.whatsapp-logo img {
+    position: fixed;
+    width: 45px;
+    top: 530px;
+    left: 1280px;
+    z-index: 1002;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.whatsapp-logo img:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.whatsapp-logo img:active {
+    transform: scale(0.88);
+}
+
+
+/* Hide navbar when scrolling down */
+.navbar-hidden {
+    transform: translateY(-100%);
 
 }

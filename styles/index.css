@@ -17,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: center; */
     height: 70px;
     background-color: white;
     box-shadow: 1px 0.2px 1px #242833;
@@ -30,13 +30,22 @@ body {
     width: 150px;
     cursor: pointer;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 35px;
     transition: 0.4s ease-in-out;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 
 .logo img:hover {
     scale: 1.2;
+}
+
+
+.navbar {
+    display: block;
+    margin: auto;
+    text-align: center;
 }
 
 .navigation .navbar ul {
@@ -54,6 +63,7 @@ body {
     font-size: 16px;
     text-decoration: none;
     margin-top: 20px;
+    text-align: center;
     transition: 0.2s ease-in-out;
 }
 

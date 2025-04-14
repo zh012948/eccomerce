@@ -80,32 +80,45 @@ body {
     }
 }
 
-/* ========== NAVIGATION ========== */
+
+/* ============================  Navigation  =========================*/
+
+
 .navigation {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: center; */
     height: 70px;
-    padding: 12px;
     background-color: white;
     box-shadow: 1px 0.2px 1px #242833;
     z-index: 999;
     transition: transform 0.2s ease;
+
 }
 
 .logo img {
     width: 150px;
     cursor: pointer;
-    margin-left: 15px;
-    margin-top: 12px;
+    margin-top: 10px;
+    margin-left: 35px;
     transition: 0.4s ease-in-out;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
 
 .logo img:hover {
     scale: 1.2;
+}
+
+
+.navbar {
+    display: block;
+    margin: auto;
+    text-align: center;
 }
 
 .navigation .navbar ul {
@@ -123,6 +136,7 @@ body {
     font-size: 16px;
     text-decoration: none;
     margin-top: 20px;
+    text-align: center;
     transition: 0.2s ease-in-out;
 }
 
@@ -130,39 +144,8 @@ body {
     font-weight: bold;
 }
 
-#mob-login {
-    display: none;
-}
 
-.nav-icons {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-}
-
-#search-icon,
-#log-icon,
-#cart-icon,
-#moon-icon {
-    width: 25px;
-    cursor: pointer;
-    transition: 0.1s ease-in;
-}
-
-#search-icon:hover,
-#log-icon:hover,
-#cart-icon:hover,
-#moon-icon:hover {
-    scale: 1.2;
-}
-
-#search-icon:active,
-#log-icon:active,
-#cart-icon:active {
-    transform: scale(0.88);
-}
-
-/* ========== WHATSAPP ICON ========== */
+/* Floating Whatsapp Icon */
 .whatsapp-logo img {
     position: fixed;
     width: 45px;
@@ -174,43 +157,18 @@ body {
 }
 
 .whatsapp-logo img:hover {
+
     transform: translateY(-5px);
 }
+
 
 .whatsapp-logo img:active {
     transform: scale(0.88);
 }
 
-/* ========== FOOTER FIXED ========== */
-.footer {
-    background-color: #000;
-    padding: 1px;
-    text-align: center;
-    color: #fff;
-    border-top: 1px solid #333;
-}
 
-.social-links img {
-    width: 35px;
-    margin: 10px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.social-links img:hover {
-    transform: scale(1.2);
-    filter: brightness(1.2);
-}
-
-/* ========== HIDE NAV ON SCROLL ========== */
+/* Hide navbar when scrolling down */
 .navbar-hidden {
     transform: translateY(-100%);
-}
-
-
-.contact-form p {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
 
 }

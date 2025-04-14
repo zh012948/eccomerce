@@ -100,3 +100,9 @@
 .order-btn:active {
     transform: scale(0.98);
 }
+
+
+button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

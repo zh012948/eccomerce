@@ -17,6 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
             const productAvailability = document.querySelector(".badge");
 
             // Set the values for the product card
+            document.title = product.title;
             productImage.src = product.image;  // Set image source
             productName.textContent = product.title;  // Set product name
             oldPrice.textContent = `₨ ${product.originalPrice}`;  // Set original price

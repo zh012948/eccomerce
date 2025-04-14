@@ -172,3 +172,46 @@ body {
     transform: translateY(-100%);
 
 }
+
+
+/* navbar Responsive Code */
+
+@media screen and (max-width:768px) {
+    #menu {
+        margin-left: 100px;
+        display: block;
+    }
+
+    .logo {
+        transform: translateX(30px);
+    }
+
+    .navigation .navbar ul {
+        flex-direction: column;
+        margin-top: 9px;
+        display: none;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .navigation .navbar {
+
+        margin-top: 42px;
+    }
+
+
+    .navigation {
+        transition: height 0.1s ease-in-out;
+    }
+
+
+
+    .navigation .navbar ul li {
+        margin: 8px;
+    }
+
+    .navigation .navbar ul li a {
+        margin-top: 4px;
+    }
+
+}

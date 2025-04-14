@@ -28,6 +28,7 @@
 
             <!-- Navbar -->
             <div class="navbar">
+                <img src="assets/menu.png" alt="menu" class="menu" id="menu" onclick="toggleMenu()">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
@@ -104,6 +105,29 @@
             const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, "_blank");
         }
+
+
+        // Toggle Menu
+        function toggleMenu() {
+            const menuIcon = document.getElementById('menu');
+            const menuList = document.getElementById('menuList');
+            const navigation = document.querySelector('.navigation');
+            const navbarMenu = document.querySelector('.navigation .navbar ul');
+            // Toggle the display of the menu (ul)
+            menuList.classList.toggle('show');
+
+            // Change the menu icon to close or menu based on the current state
+            if (menuList.classList.contains('show')) {
+                menuIcon.src = 'assets/close.png'; // Change to close icon
+                navigation.style.height = '48vh'; // Set navigation height to 48vh
+                navbarMenu.style.display = 'block';
+            } else {
+                menuIcon.src = 'assets/menu.png'; // Change back to menu icon
+                navigation.style.height = ''; // Reset navigation height to default
+                navbarMenu.style.display = 'none';
+            }
+        }
+
 
     </script>
 

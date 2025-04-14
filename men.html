@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -49,7 +50,8 @@
 
     <!-- Floating Whatsapp icon -->
     <div class="whatsapp-logo">
-        <img src="./assets/whatsapp.png" id="whatsapp" alt="Floating Whatsapp Icon" title="Contact on Whatsapp">
+        <img src="./assets/whatsapp.png" onclick="openWhatsApp()" id="whatsapp" alt="Floating Whatsapp Icon"
+            title="Contact on Whatsapp">
     </div>
 
 
@@ -100,10 +102,19 @@
 
             lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
         });
+
+        function openWhatsApp() {
+            const phoneNumber = "923435022406";
+            const message = "Hey there! I want to get information about your products.";
+
+            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, "_blank");
+        }
+
     </script>
 
-
     <script src="men.js"></script>
+
 </body>
 
 </html>

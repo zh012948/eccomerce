@@ -23,10 +23,22 @@
     line-height: 28.8px;
 }
 
-
 .footer {
     margin-top: 92px;
 }
+
+
+/* Responsiveness  */
+@media screen and (max-width:768px) {
+    .shipping-container .content {
+        height: 260px;
+        font-size: 18px;
+        width: 300px;
+    }
+
+}
+
+
 
 /* Whatsapp Responsive */
 
@@ -34,10 +46,9 @@
 
     .whatsapp-logo img {
         bottom: 0px;
-        transform: translateY(10px);
+        transform: translateY(-5px);
         left: 290px;
 
     }
-
 
 }

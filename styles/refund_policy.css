@@ -30,14 +30,31 @@
 
 /* Whatsapp Responsive */
 
+/* Responsiveness  */
 @media screen and (max-width:768px) {
+    .refund-container .content {
+        height: 260px;
+        font-size: 18px;
+        width: 300px;
+        line-height: 24px;
+    }
+
+}
+
+
+
+/* Whatsapp Responsive */
+
+@media screen and (max-width:768px) {
+    .refund-container {
+        margin-top: 5px;
+    }
 
     .whatsapp-logo img {
         bottom: 0px;
-        transform: translateY(10px);
+        transform: translateY(-5px);
         left: 290px;
 
     }
-
 
 }

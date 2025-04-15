@@ -93,13 +93,10 @@ function renderProducts(products) {
             <button class="order-now">Order Now</button>
         `;
 
-        // Add event listener to "Order Now" button
-        const orderButton = card.querySelector(".order-now");
-        orderButton.addEventListener("click", () => {
-            // Clear previous localStorage data
+        // Common handler to store product in localStorage and redirect
+        const handleOrderClick = () => {
             localStorage.clear();
 
-            // Store the product details in localStorage
             const productData = {
                 title: product.title,
                 price: product.price,
@@ -110,10 +107,18 @@ function renderProducts(products) {
             };
 
             localStorage.setItem("selectedProduct", JSON.stringify(productData));
-
-            // Redirect to order-card.html
             window.location.href = "order-card.html";
+        };
+
+        // Button-specific event
+        const orderButton = card.querySelector(".order-now");
+        orderButton.addEventListener("click", (e) => {
+            e.stopPropagation(); // prevent card click duplication
+            handleOrderClick();
         });
+
+        // Card click event
+        card.addEventListener("click", handleOrderClick);
 
         productContainer.appendChild(card);
     });

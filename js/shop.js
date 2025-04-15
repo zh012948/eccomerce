@@ -98,35 +98,30 @@ function renderProducts(products) {
                     : "Sold Out";
 
         card.innerHTML = `
-      <div class="img-wrapper">
-        <img src="${product.image}" alt="${product.title}" />
-      </div>
-      <p class="availability">${label}</p>
-      <p class="product-name">${product.title}</p>
-      <p class="cross-price">Rs. ${product.originalPrice} PKR</p>
-      <p class="original-price">Rs. ${product.price} PKR</p>
-      <button class="order-now">Order Now</button>
-    `;
+            <div class="img-wrapper">
+                <img src="${product.image}" alt="${product.title}" />
+            </div>
+            <p class="availability">${label}</p>
+            <p class="product-name">${product.title}</p>
+            <p class="cross-price">Rs. ${product.originalPrice} PKR</p>
+            <p class="original-price">Rs. ${product.price} PKR</p>
+            <button class="order-now">Order Now</button>
+        `;
 
-        // Add event listener to "Order Now" button
-        const orderButton = card.querySelector(".order-now");
-        orderButton.addEventListener("click", () => {
-            // Clear previous localStorage data
+        // Store the product data
+        const productData = {
+            title: product.title,
+            price: product.price,
+            originalPrice: product.originalPrice,
+            rating: product.rating,
+            availability: product.availability,
+            image: product.image,
+        };
+
+        // Make entire card clickable
+        card.addEventListener("click", () => {
             localStorage.clear();
-
-            // Store the product details in localStorage
-            const productData = {
-                title: product.title,
-                price: product.price,
-                originalPrice: product.originalPrice,
-                rating: product.rating,
-                availability: product.availability,
-                image: product.image,
-            };
-
             localStorage.setItem("selectedProduct", JSON.stringify(productData));
-
-            // Redirect to order-card.html
             window.location.href = "order-card.html";
         });
 
@@ -174,11 +169,11 @@ function startCountdown(targetDateStr) {
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         countdownDisplay.innerHTML = `
-      <div class="count-box"><span>${days}</span> Days</div>
-      <div class="count-box"><span>${hours}</span> Hours</div>
-      <div class="count-box"><span>${minutes}</span> Minutes</div>
-      <div class="count-box"><span>${seconds}</span> Seconds</div>
-    `;
+            <div class="count-box"><span>${days}</span> Days</div>
+            <div class="count-box"><span>${hours}</span> Hours</div>
+            <div class="count-box"><span>${minutes}</span> Minutes</div>
+            <div class="count-box"><span>${seconds}</span> Seconds</div>
+        `;
     }
 
     updateCountdown();

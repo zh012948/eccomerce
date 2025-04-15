@@ -23,7 +23,6 @@ function renderPage() {
 
     const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
-    // Make sure currentPage is within valid bounds
     if (currentPage > totalPages) currentPage = 1;
 
     const start = (currentPage - 1) * productsPerPage;
@@ -93,13 +92,10 @@ function renderProducts(products) {
             <button class="order-now">Order Now</button>
         `;
 
-        // Add event listener to "Order Now" button
-        const orderButton = card.querySelector(".order-now");
-        orderButton.addEventListener("click", () => {
-            // Clear previous localStorage data
+        // Function to handle product selection and redirect
+        const handleOrderClick = () => {
             localStorage.clear();
 
-            // Store the product details in localStorage
             const productData = {
                 title: product.title,
                 price: product.price,
@@ -110,10 +106,18 @@ function renderProducts(products) {
             };
 
             localStorage.setItem("selectedProduct", JSON.stringify(productData));
-
-            // Redirect to order-card.html
             window.location.href = "order-card.html";
+        };
+
+        // Button-specific event
+        const orderButton = card.querySelector(".order-now");
+        orderButton.addEventListener("click", (e) => {
+            e.stopPropagation(); // prevent card click from triggering too
+            handleOrderClick();
         });
+
+        // Card click event
+        card.addEventListener("click", handleOrderClick);
 
         productContainer.appendChild(card);
     });
@@ -137,7 +141,7 @@ function renderPagination(totalPages) {
     }
 }
 
-// Event Listeners (with currentPage reset fix)
+// Event Listeners
 searchInput.addEventListener("input", () => {
     currentPage = 1;
     renderPage();

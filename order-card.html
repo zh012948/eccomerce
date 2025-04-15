@@ -237,7 +237,9 @@
             const productName = product?.title || 'Unknown Product';
             const price = product?.price || 'N/A';
             const originalPrice = product?.originalPrice || 'N/A';
-            const imageURL = `https://zh012948.github.io/eccomerce/images/${product?.image || 'N/A'}`;
+
+            const imagePath = product.image ? product.image : "default.jpg";
+            const imageURL = new URL(imagePath, "https://zh012948.github.io/eccomerce/").href;
 
             const message = `
         Name: ${name}

@@ -117,15 +117,6 @@
     "image": "images/citizen4.jpg"
   },
   {
-    "title": "G Shock Green",
-    "category": "g-shock",
-    "price": 2800,
-    "originalPrice": 3300,
-    "rating": 4,
-    "availability": "sale",
-    "image": "images/gshock1.jpg"
-  },
-  {
     "title": "G Shock Blue",
     "category": "g-shock",
     "price": 2800,

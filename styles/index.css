@@ -420,7 +420,14 @@ body {
 }
 
 
-#couple-watch {
+#couple-watch,
+#women-watch,
+#men-watch {
     width: 340px;
+    height: auto;
 
+}
+
+#women-watch {
+    height: 430px;
 }

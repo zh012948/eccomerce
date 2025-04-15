@@ -185,7 +185,7 @@
             // Parse the stringified JSON object properly
             const product = JSON.parse(storedProduct);
 
-            const imagePath = product.image || "default.jpg";
+            const imagePath = `images/${product.image}`;
             const fullImageUrl = `${location.origin}/eccomerce/${imagePath}`;
 
             const imgElement = document.querySelector("#product-img");

@@ -76,7 +76,8 @@ function renderProducts(products) {
         if (selectedCollection === "women") {
             productContainer.innerHTML = "";
             countdownContainer.style.display = "block";
-            startCountdown("2025-04-20T00:00:00");
+            startCountdown("2025-05-15T00:00:00");
+
         } else {
             productContainer.innerHTML = "<p>No products found.</p>";
             countdownContainer.style.display = "none";

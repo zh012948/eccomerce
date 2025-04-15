@@ -178,12 +178,23 @@
             lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
         });
 
-
-        // 🔧 Fix: Load product data from localStorage correctly
+        // 🔧 Load product data from localStorage correctly
         const product = JSON.parse(localStorage.getItem("selectedProduct"));
 
         if (product) {
-            document.querySelector("#product-img").src = product.image || "default.jpg";
+            const imagePath = product.image || "default.jpg";
+            const fullImageUrl = `${location.origin}/${imagePath}`;
+
+            const imgElement = document.querySelector("#product-img");
+            imgElement.src = fullImageUrl;
+            imgElement.alt = product.name || "Product";
+
+            // 🆕 Open full image in new tab on click
+            imgElement.style.cursor = "pointer";
+            imgElement.addEventListener("click", () => {
+                window.open(fullImageUrl, "_blank");
+            });
+
             document.querySelector("#product-name").innerText = product.name || "Product Name";
             document.querySelector("#old-price").innerText = product.oldPrice || "";
             document.querySelector("#new-price").innerText = product.price || "";
@@ -198,14 +209,12 @@
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
 
-            // Get form input values
             const name = document.querySelector('#name').value.trim();
             const contact = document.querySelector('#contact').value.trim();
             const email = document.querySelector('#email').value.trim();
             const address = document.querySelector('#address').value.trim();
             const city = document.querySelector('#city').value.trim();
 
-            // Get product data from localStorage
             const storedProduct = localStorage.getItem('selectedProduct');
             let product = {};
 
@@ -215,13 +224,11 @@
                 console.error('Error parsing product:', err);
             }
 
-            // Fallbacks if something's missing
             const productName = product?.title || 'Unknown Product';
             const price = product?.price || 'N/A';
             const originalPrice = product?.originalPrice || 'N/A';
             const imageURL = `${location.origin}/${product?.image || 'N/A'}`;
 
-            // Compose plain text message
             const message = `
                 Name: ${name}
                 Email: ${email}
@@ -233,9 +240,8 @@
                 Address: ${address}
                 City: ${city}
                 Order Time: ${new Date().toLocaleString()}
-                    `.trim();
+            `.trim();
 
-            // Prepare form data
             const formData = new FormData();
             formData.append('access_key', "6083e3f6-020c-4db3-bd66-44707beea28e");
             formData.append('name', name);
@@ -271,24 +277,21 @@
             const menuList = document.getElementById('menuList');
             const navigation = document.querySelector('.navigation');
             const navbarMenu = document.querySelector('.navigation .navbar ul');
-            // Toggle the display of the menu (ul)
+
             menuList.classList.toggle('show');
 
-            // Change the menu icon to close or menu based on the current state
             if (menuList.classList.contains('show')) {
-                menuIcon.src = 'assets/close.png'; // Change to close icon
-                navigation.style.height = '48vh'; // Set navigation height to 48vh
+                menuIcon.src = 'assets/close.png';
+                navigation.style.height = '48vh';
                 navbarMenu.style.display = 'block';
             } else {
-                menuIcon.src = 'assets/menu.png'; // Change back to menu icon
-                navigation.style.height = ''; // Reset navigation height to default
+                menuIcon.src = 'assets/menu.png';
+                navigation.style.height = '';
                 navbarMenu.style.display = 'none';
             }
         }
-
-
-
     </script>
+
 
 
 

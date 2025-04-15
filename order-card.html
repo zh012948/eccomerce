@@ -179,15 +179,24 @@
         });
 
         // 🔧 Load product data from localStorage correctly
-        const product = JSON.parse(localStorage.getItem("selectedProduct"));
+        const storedProduct = localStorage.getItem("selectedProduct");
 
-        if (product) {
+        if (storedProduct) {
+            // Parse the stringified JSON object properly
+            const product = JSON.parse(storedProduct);
+
             const imagePath = product.image || "default.jpg";
             const fullImageUrl = `${location.origin}/eccomerce/${imagePath}`;
 
             const imgElement = document.querySelector("#product-img");
             imgElement.src = fullImageUrl;
-            imgElement.alt = product.name || "Product";
+            imgElement.alt = product.title || "Product";
+
+            // // After fetching or setting productData
+            if (product.availability.toLowerCase() === "not available") {
+                document.getElementById("stock-alert").textContent = "Sorry! We are out of stock";
+            }
+
 
             // 🆕 Open full image in new tab on click
             imgElement.style.cursor = "pointer";
@@ -195,10 +204,10 @@
                 window.open(fullImageUrl, "_blank");
             });
 
-            document.querySelector("#product-name").innerText = product.name || "Product Name";
-            document.querySelector("#old-price").innerText = product.oldPrice || "";
-            document.querySelector("#new-price").innerText = product.price || "";
-            document.querySelector("#badge").innerText = product.brand || "";
+            document.querySelector("#product-name").innerText = product.title || "Product Name";
+            document.querySelector("#old-price").innerText = product.originalPrice ? `Original Price: ${product.originalPrice} PKR` : '';
+            document.querySelector("#new-price").innerText = product.price ? `Discounted Price: ${product.price} PKR` : '';
+            document.querySelector("#badge").innerText = product.rating ? `Rating: ${product.rating}` : "Rating: N/A";
         } else {
             console.warn("No product found in localStorage under 'selectedProduct'");
         }
@@ -230,17 +239,17 @@
             const imageURL = `${location.origin}/${product?.image || 'N/A'}`;
 
             const message = `
-                Name: ${name}
-                Email: ${email}
-                Contact Number: ${contact}
-                Product Name: ${productName}
-                Price: ${price} PKR
-                Original Price: ${originalPrice} PKR
-                Product Image URL: ${imageURL}
-                Address: ${address}
-                City: ${city}
-                Order Time: ${new Date().toLocaleString()}
-            `.trim();
+        Name: ${name}
+        Email: ${email}
+        Contact Number: ${contact}
+        Product Name: ${productName}
+        Price: ${price} PKR
+        Original Price: ${originalPrice} PKR
+        Product Image URL: ${imageURL}
+        Address: ${address}
+        City: ${city}
+        Order Time: ${new Date().toLocaleString()}
+    `.trim();
 
             const formData = new FormData();
             formData.append('access_key', "6083e3f6-020c-4db3-bd66-44707beea28e");
@@ -290,6 +299,7 @@
                 navbarMenu.style.display = 'none';
             }
         }
+
     </script>
 
 
